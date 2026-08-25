@@ -43,15 +43,17 @@ jobs:
           files: |
             ${{ steps.script.outputs.new_ver }}.apk
           body: |
-            禁漫APP v${{ steps.script.outputs.new_ver }}
-            你可以直接下载Assets的`${{ steps.script.outputs.new_ver }}.apk`使用，或者从禁漫官网下载:
-            
-            禁漫官网的`${{ steps.script.outputs.new_ver }}.apk`下载链接：
+            # 禁漫APP v${{ steps.script.outputs.new_ver }}
+
+            [<u>📥点击直接下载 v${{ steps.script.outputs.new_ver }} APK</u>](https://github.com/${{ github.repository }}/releases/download/${{ steps.script.outputs.new_ver }}/${{ steps.script.outputs.new_ver }}.apk)
+
+            或者从禁漫官网下载，官网下载链接：
+
             1. [${{ steps.script.outputs.download_path1 }}](${{ steps.script.outputs.download_path1 }})
             2. [${{ steps.script.outputs.download_path2 }}](${{ steps.script.outputs.download_path2 }})
             3. [https://18comic.vip/stray](https://18comic.vip/stray/)（发布页）
             
-            `${{ steps.script.outputs.new_ver }}.apk`的更新信息：
+            `${{ steps.script.outputs.new_ver }}.apk` 的官方更新信息：
             
             > ${{ steps.script.outputs.desc }}
 
